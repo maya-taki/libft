@@ -6,7 +6,7 @@
 /*   By: mtakiyos <mtakiyos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 14:26:51 by mtakiyos          #+#    #+#             */
-/*   Updated: 2025/07/29 21:14:58 by mtakiyos         ###   ########.fr       */
+/*   Updated: 2025/07/31 17:44:59 by mtakiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t		i;
+	size_t			i;
 	unsigned char	*str;
-	
+
 	i = 0;
 	str = (unsigned char *)s;
 	while (i < n)
@@ -27,4 +27,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-

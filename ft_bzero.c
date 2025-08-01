@@ -6,7 +6,7 @@
 /*   By: mtakiyos <mtakiyos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 14:26:42 by mtakiyos          #+#    #+#             */
-/*   Updated: 2025/07/29 17:54:26 by mtakiyos         ###   ########.fr       */
+/*   Updated: 2025/07/31 17:44:11 by mtakiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,3 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
-/*
-The bzero() function places n zero-valued
-bytes in the area pointed to by s.
-*/
