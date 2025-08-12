@@ -6,7 +6,7 @@
 /*   By: mtakiyos <mtakiyos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 14:27:04 by mtakiyos          #+#    #+#             */
-/*   Updated: 2025/07/31 17:40:37 by mtakiyos         ###   ########.fr       */
+/*   Updated: 2025/08/08 21:16:52 by mtakiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	i = 0;
 	if (*little == '\0')
 		return ((char *) big);
-	while (i < len)
+	while (i < len && big[i])
 	{
 		j = 0;
 		while (big[i + j] == little[j] && (i + j) < len)

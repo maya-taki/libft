@@ -6,7 +6,7 @@
 /*   By: mtakiyos <mtakiyos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 14:26:55 by mtakiyos          #+#    #+#             */
-/*   Updated: 2025/07/29 17:54:03 by mtakiyos         ###   ########.fr       */
+/*   Updated: 2025/08/08 21:23:35 by mtakiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t			i;
-	unsigned char	*str;
+	unsigned char	*mem;
 
-	str = (unsigned char *)s;
+	mem = (unsigned char *)s;
 	i = 0;
 	while (i < n)
 	{
-		str[i] = c;
+		mem[i] = c;
 		i++;
 	}
 	return (s);

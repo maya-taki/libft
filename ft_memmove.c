@@ -6,7 +6,7 @@
 /*   By: mtakiyos <mtakiyos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 14:26:54 by mtakiyos          #+#    #+#             */
-/*   Updated: 2025/07/29 18:19:15 by mtakiyos         ###   ########.fr       */
+/*   Updated: 2025/08/04 20:30:03 by mtakiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,24 +18,23 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char	*byte_s;
 	size_t			i;
 
+	i = 0;
+	if (!dest && !src)
+		return ((void *) 0);
 	byte_d = (unsigned char *)dest;
 	byte_s = (unsigned char *)src;
-	if (dest == src || n == 0)
-		return (dest);
-	if (dest < src)
+	if (dest > src)
 	{
-		i = 0;
+		while (n--)
+			byte_d[n] = byte_s[n];
+	}
+	else
+	{
 		while (i < n)
 		{
 			byte_d[i] = byte_s[i];
 			i++;
 		}
-	}	
-	if (dest > src)
-	{
-		i = n;
-		while (i-- > 0)
-			byte_d[i - 1] = byte_s[i - 1];
 	}
 	return (dest);
 }

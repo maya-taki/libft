@@ -6,7 +6,7 @@
 /*   By: mtakiyos <mtakiyos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 14:26:42 by mtakiyos          #+#    #+#             */
-/*   Updated: 2025/07/31 17:44:11 by mtakiyos         ###   ########.fr       */
+/*   Updated: 2025/08/08 20:03:00 by mtakiyos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 void	ft_bzero(void *s, size_t n)
 {
 	size_t			i;
-	unsigned char	*str;
+	unsigned char	*mem;
 
 	i = 0;
-	str = (unsigned char *)s;
+	mem = (unsigned char *)s;
 	while (i < n)
 	{
-		str[i] = 0;
+		mem[i] = 0;
 		i++;
 	}
 }
